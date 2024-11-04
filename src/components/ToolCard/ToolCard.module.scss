@@ -1,0 +1,26 @@
+@import "@/styles/mixins.scss";
+@import "@/styles/variables.scss";
+
+.toolCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-right: 24px;
+  letter-spacing: 0.15px;
+
+  @include font-props(16px, 600, 1.5, $t-secondary);
+
+  @include min(391) {
+    justify-content: flex-start;
+
+    &:not(:last-child) {
+      margin-right: 26px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

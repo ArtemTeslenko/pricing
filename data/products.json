@@ -1,0 +1,29 @@
+[
+  {
+    "id": "9e80eb1d-c3d6-4258-84bd-98da329d4564",
+    "name": "Unlimited_annual_plan_49.00_usd_0days_0_trial",
+    "regularity": "month",
+    "price": 4900,
+    "currency": "USD",
+    "trial_period": 0,
+    "trial_amount": 2499
+  },
+  {
+    "id": "38e77d4a-e20a-44ee-bcc3-b29b3c79f524",
+    "name": "7-day_access_10.00_usd_7days_1_trial",
+    "regularity": "month",
+    "price": 1000,
+    "currency": "USD",
+    "trial_period": 7,
+    "trial_amount": 2999
+  },
+  {
+    "id": "f093c79b-0cde-4409-a935-5cb9f270b76b",
+    "name": "Unlimited_1-month_plan_69.99_usd_0days_0_trial",
+    "regularity": "month",
+    "price": 6999,
+    "currency": "USD",
+    "trial_period": 0,
+    "trial_amount": 3999
+  }
+]

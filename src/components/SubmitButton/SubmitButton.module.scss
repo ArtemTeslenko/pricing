@@ -1,0 +1,18 @@
+@import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
+
+.submitButton {
+  min-width: 296px;
+  max-width: 296px;
+  margin: 0 auto 24px auto;
+  padding: 16px;
+  letter-spacing: 0.15px;
+  background: linear-gradient(90deg, #00b39b 0%, #3b71f7 100%);
+  border-radius: 100px;
+
+  @include font-props(18px, 700, 1.33, $total-white);
+
+  @include min(391) {
+    @include font-props(16px, 600, 1.5, $total-white);
+  }
+}

@@ -1,0 +1,14 @@
+@import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
+
+.subscriptionInfo,
+.subscriptionInfoLink {
+  text-align: center;
+  letter-spacing: 0.1px;
+
+  @include font-props(12px, 400, 1.66, #747e97);
+}
+
+.subscriptionInfoLink {
+  border-bottom: 1px solid #747e97;
+}

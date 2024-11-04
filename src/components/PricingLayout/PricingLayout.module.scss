@@ -1,0 +1,14 @@
+@import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
+
+.title {
+  margin-bottom: 32px;
+  text-align: center;
+  letter-spacing: -0.25px;
+
+  @include font-props(28px, 700, 1.28, $t-primary);
+
+  @include min(391) {
+    @include font-props(45px, 600, 1.15, $t-primary);
+  }
+}

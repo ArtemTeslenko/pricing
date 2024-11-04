@@ -1,0 +1,12 @@
+@import "@/styles/mixins.scss";
+
+.palnsList {
+  margin-bottom: 20px;
+
+  @include min(391) {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 16px;
+    margin-bottom: 10px;
+  }
+}

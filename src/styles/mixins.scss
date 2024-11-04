@@ -1,0 +1,32 @@
+@mixin max($width) {
+  @media screen and (max-width: #{$width}px) {
+    @content;
+  }
+}
+
+@mixin min($width) {
+  @media screen and (min-width: #{$width}px) {
+    @content;
+  }
+}
+
+@mixin between($min, $max) {
+  @media screen and (min-width: #{$min}px) and (max-width: #{$max}px) {
+    @content;
+  }
+}
+
+@mixin font-props(
+  $fSize,
+  $fWeight,
+  $lHeight,
+  $color,
+  $fFamily: "Inter",
+  $fbFamily: sans-serif
+) {
+  font-size: $fSize;
+  font-weight: $fWeight;
+  line-height: $lHeight;
+  color: $color;
+  font-family: $fFamily, $fbFamily;
+}

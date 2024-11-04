@@ -1,0 +1,47 @@
+@import "@/styles/mixins.scss";
+
+.marqueeContainer {
+  overflow: hidden;
+  width: 100vw;
+  margin-left: -12px;
+  margin-bottom: 54px;
+
+  @include min(391) {
+    width: auto;
+    margin-left: 0;
+    margin-bottom: 72px;
+  }
+}
+
+.marquee {
+  display: flex;
+  justify-content: space-around;
+  width: 497%;
+  animation: scroll-left 10s linear infinite;
+
+  @include min(391) {
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    animation: none;
+  }
+}
+
+.marqueeList {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+  @include min(391) {
+    justify-content: center;
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
